@@ -15,7 +15,7 @@ chmod +x apt-cyg
 mv apt-cyg /usr/local/bin
 
 # dependencies
-apt-cyg install curl wget git gcc-core gcc-g++ libtool automake autoconf make cmake patch libboost-devel openssl-devel libbz2-devel libsqlite3-devel libcurl-devel liblzma-devel libsodium-devel
+apt-cyg install curl wget git patch gcc-core gcc-g++ libtool automake autoconf make cmake patch libboost-devel openssl-devel libbz2-devel libsqlite3-devel libcurl-devel liblzma-devel libsodium-devel
 
 # PKG_CONFIG_PATH
 export PKG_CONFIG_PATH="/lib/pkgconfig:/usr/local/lib/pkgconfig"
