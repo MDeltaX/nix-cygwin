@@ -58,7 +58,8 @@ mkdir -p /etc/nix
 cp scripts/nix-profile.sh /etc/nix/
 cd ..
 rm -r nix-$NIX_VERSION
-echo source /etc/nix/nix-profile.sh >> ~/.profile
+prof="source /etc/nix/nix-profile.sh"
+grep -qxF $prof ~/.profile || echo $prof >> ~/.profile
 nix-channel --add https://nixos.org/channels/$NIXPKGS_VERSION nixpkgs
 nix-channel --update
 
