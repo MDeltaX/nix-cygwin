@@ -14,5 +14,5 @@ chmod +x nix-install
 
 ## WIP issues
 **Suggestions welcome!**
-* Binary cache download makes Nix fail silently (workaround: *nix-shell -p hello* **--option substitute false**)
+* Binary cache downloads make Nix fail silently (workaround: *nix-shell -p hello* **--option substitute false**)
 * Using newer Nixpkgs than **18.09** results in *infinite recursion*
